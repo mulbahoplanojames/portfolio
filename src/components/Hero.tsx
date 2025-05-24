@@ -2,7 +2,6 @@
 // Importing Link component from react-scroll
 import { Link } from "react-scroll";
 import { BackgroundBeams } from "./ui/background-beams";
-import { socials } from "@/data/footerData";
 
 export const Hero: React.FC = () => {
   // Function to handle the activation of a link

@@ -3,6 +3,42 @@ import { ProjectType } from "@/types/types";
 const projects: ProjectType[] = [
   {
     projectID: 1,
+    image: "/assets/projects/fassel-fc.png",
+    projectTitle: "Fassel Football Club",
+    projectDescription:
+      "I developed the Fassel Football Club website to provide fans with a platform to stay updated on the latest news, match schedules, and player information. The site features a user-friendly interface, ensuring easy navigation and access to essential club details.",
+    technologiesUsed: [
+      "Next Js",
+      "Tailwind CSS",
+      "Typescript",
+      "Mongo DB",
+      "Prisma",
+    ],
+    liveDemo: "https://fassel-fc.vercel.app/",
+    code: "https://github.com/mulbahoplanojames/fessel-fc",
+  },
+  {
+    projectID: 2,
+    image: "/assets/projects/amoa-courses.png",
+    projectTitle: "Amoa Courses",
+    projectDescription:
+      "I developed AMOA Courses to be a robust, open-source platform designed for both educators and students to create, manage, and participate in online courses..",
+    technologiesUsed: ["Next Js", "Tailwind CSS", "Typescript"],
+    liveDemo: "https://amoa-courses.vercel.app/",
+    code: "https://github.com/mulbahoplanojames/amoa-courses",
+  },
+  {
+    projectID: 3,
+    image: "/assets/projects/hair-salon.png",
+    projectTitle: "Prince Hair Salon",
+    projectDescription:
+      "I developed Prince Hair Salon to provide a platform for customers to book appointments, view services, and learn more about the salon's offerings. The website features a clean design and user-friendly interface, making it easy for clients to navigate and access information.",
+    technologiesUsed: ["Next Js", "Tailwind CSS", "Typescript"],
+    liveDemo: "https://prince-beauty-salon.vercel.app/",
+    code: "https://github.com/mulbahoplanojames/linda-hair-salon",
+  },
+  {
+    projectID: 4,
     image: "/assets/weedorUI.png",
     projectTitle: "WeedorUI Components Library",
     projectDescription:
@@ -12,7 +48,7 @@ const projects: ProjectType[] = [
     code: "https://github.com/mulbahoplanojames/WeedorUI",
   },
   {
-    projectID: 2,
+    projectID: 5,
     image: "/assets/techspace.png",
     projectTitle: "TechSpace StartUp Company",
     projectDescription:
@@ -22,7 +58,7 @@ const projects: ProjectType[] = [
     code: "",
   },
   {
-    projectID: 3,
+    projectID: 6,
     image: "/assets/wilfix.png",
     projectTitle: "Movie App",
     projectDescription:
@@ -32,7 +68,7 @@ const projects: ProjectType[] = [
     code: "https://github.com/mulbahoplanojames/Binage-9",
   },
   {
-    projectID: 4,
+    projectID: 7,
     image: "/assets/kids_math.png",
     projectTitle: "Math 4 Kids, a math game for Kids",
     projectDescription:
@@ -42,18 +78,7 @@ const projects: ProjectType[] = [
     code: "https://github.com/mulbahoplanojames/Math-4-Kids",
   },
   {
-    projectID: 5,
-    image: "/assets/Dev!Tech_Blog.png",
-    projectTitle: "Dev!Tech Blog and Ebooks",
-    projectDescription:
-      "A comprehensive blogging platform focusing on technology-related topics. Users can explore a wide range of ebooks and blogs. It provides a user-friendly interface to navigate through different sections of the web App. It also as a feature where users access OpenAi.",
-    technologiesUsed: ["React", "Tailwind Css", "JavaScript"],
-    liveDemo: "https://devtech-ebook-blog.netlify.app/",
-    code: "https://github.com/mulbahoplanojames/Dev-Tech-Ebook---Blog",
-  },
-
-  {
-    projectID: 6,
+    projectID: 8,
     image: "/assets/Naa-kai.png",
     projectTitle: "Naa-Kaai-Kai-Enterprise",
     projectDescription:
@@ -63,7 +88,7 @@ const projects: ProjectType[] = [
     code: "https://github.com/mulbahoplanojames/SteveCom",
   },
   {
-    projectID: 7,
+    projectID: 9,
     image: "/assets/dorcas_school.png",
     projectTitle: "Dorcas Christain School",
     projectDescription:
