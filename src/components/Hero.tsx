@@ -2,6 +2,7 @@
 // Importing Link component from react-scroll
 import { Link } from "react-scroll";
 import { BackgroundBeams } from "./ui/background-beams";
+import { socials } from "@/data/footerData";
 
 export const Hero: React.FC = () => {
   // Function to handle the activation of a link
@@ -20,8 +21,8 @@ export const Hero: React.FC = () => {
         </h1>
         <p></p>
         <p className="text-text max-w-lg mx-auto my-2 text-sm md:text-lg  text-center relative z-10">
-          Hi! I’m Oplano James Mulbah, a passionate Front-end Software Engineer
-          ready to elevate your web projects.
+          Hi! I’m Oplano James Mulbah, a Front-end Software Engineer base in
+          Rwanda ready to elevate your web projects.
         </p>
 
         <Link

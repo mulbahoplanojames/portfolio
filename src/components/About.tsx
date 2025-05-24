@@ -14,10 +14,10 @@ const AboutMe: React.FC = () => {
               About Me
             </h1>
             <p className="text-text pb-6">
-              As a passionate Front-end React Developer, I bring ideas to life
-              through clean, efficient code. With a keen eye for design and a
-              love for problem-solving, I create responsive and user-friendly
-              web experiences that leave a lasting impression.
+              As a Front-end Developer, I bring ideas to life through clean,
+              efficient code. With a keen eye for design and a love for
+              problem-solving, I create responsive and user-friendly web
+              experiences that leave a lasting impression.
             </p>
             <p className="text-text pb-8 ">My Expertise Includes:</p>
           </div>

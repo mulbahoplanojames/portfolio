@@ -9,6 +9,7 @@ import SyntaxHighlighter from "react-syntax-highlighter";
 const AboutCode = () => {
   // State variable to keep track of whether the code has been copied
   const [copy, setCopy] = useState(false);
+  const passion = "coding";
 
   const codeString = `
 const AboutMe = () => {
@@ -22,7 +23,7 @@ const AboutMe = () => {
        <>
            Hello, I am Oplano James Mulbah, 
 
-          I passionate about Front-end React 
+            I love ${passion} and I am a Front-end Developer.
       </>
      );
    }
