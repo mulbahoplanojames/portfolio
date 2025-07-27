@@ -7,7 +7,7 @@ import { FaArrowCircleUp } from "react-icons/fa";
 import { Link, animateScroll as scroll } from "react-scroll";
 import Image from "next/image";
 import { Navlinks } from "@/data/navdata";
-import { socials } from "@/data/footerData";
+import SocialLinks from "@/components/SocialLinks";
 
 const Navbar = () => {
   // State variable to keep track of whether the menu is open or not.
@@ -66,6 +66,7 @@ const Navbar = () => {
             </li>
           ))}
         </ul>
+
         {/*//! Contact Us button */}
         <div className="lg:gap-x-6 gap-x-4 flex items-center justify-center">
           <a
@@ -81,19 +82,6 @@ const Navbar = () => {
             Download Resume
           </a>
 
-          <div className="md:flex hidden gap-4 items-center justify-center">
-            {socials.map((social) => (
-              <a
-                key={social.id}
-                href={social.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-2xl  text-white hover:text-primary1 transition-colors duration-300"
-              >
-                {social.icon}
-              </a>
-            ))}
-          </div>
           {/*//! Menu toggle button for smaller devices */}
           <TbMenu2
             className={`max-lg:block hidden text-3xl cursor-pointer `}
@@ -157,19 +145,7 @@ const Navbar = () => {
                 Download Resume
               </a>
 
-              <div className="flex gap-4 items-center justify-center">
-                {socials.map((social) => (
-                  <a
-                    key={social.id}
-                    href={social.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-2xl  text-white hover:text-primary1 transition-colors duration-300"
-                  >
-                    {social.icon}
-                  </a>
-                ))}
-              </div>
+              <SocialLinks />
             </ul>
           </nav>
         </div>
