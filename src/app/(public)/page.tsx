@@ -1,3 +1,4 @@
+import ContactSection from "@/src/components/public/contact-section";
 import Experience from "@/src/components/public/experience";
 import HeroSection from "@/src/components/public/hero-section";
 import TechnicalSkills from "@/src/components/public/technical-skills";
@@ -8,6 +9,7 @@ export default function Page() {
       <HeroSection />
       <TechnicalSkills />
       <Experience />
+      <ContactSection />
     </section>
   );
 }
