@@ -38,10 +38,6 @@ const toolsAndTechnologies = [
     icon: "/zustand.svg",
   },
   {
-    name: "Git",
-    icon: "/git.png",
-  },
-  {
     name: "Tailwind CSS",
     icon: "/tailwind.png",
   },

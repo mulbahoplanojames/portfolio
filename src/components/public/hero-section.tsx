@@ -40,11 +40,14 @@ export default function HeroSection() {
         <div className="prose prose-slate dark:prose-invert max-w-none text-lg">
           <p>
             As a{" "}
-            <span className="font-semibold text-primary">
+            <span className="font-semibold text-primary text-blue-500">
               Frontend Developer
             </span>{" "}
-            based in <span className="text-primary font-medium">Rwanda</span>, I
-            build modern, responsive, and scalable user interfaces that
+            based in{" "}
+            <span className="text-primary font-medium text-blue-500">
+              Rwanda
+            </span>
+            , I build modern, responsive, and scalable user interfaces that
             translate complex requirements into intuitive digital experiences. I
             focus on writing clean, maintainable code and creating reusable
             components that enable teams to collaborate efficiently and ship
