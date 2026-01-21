@@ -25,10 +25,10 @@ export const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
   return (
-    <header className="sticky  top-0">
+    <header className="sticky z-[9999] top-0">
       <nav
         data-state={menuState && "active"}
-        className="sticky z-20 w-full px-2 top-0"
+        className="sticky z-[9999] w-full px-2 top-0"
       >
         <div
           className={cn(
