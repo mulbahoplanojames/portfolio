@@ -18,6 +18,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Oplano James Mulbah - Portfolio",
   description: "This is my personal portfolio website",
+  icons: {
+    icon: "/oplano-james.png",
+  },
 };
 
 export default function RootLayout({
