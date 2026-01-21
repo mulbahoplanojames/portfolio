@@ -1,3 +1,4 @@
+import { Navbar } from "@/src/components/public/layout/navbar";
 import "../globals.css";
 
 export default function RootLayout({
@@ -5,5 +6,10 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  return <div>{children}</div>;
+  return (
+    <div className="flex min-h-screen flex-col">
+      <Navbar />
+      <main className="flex-1">{children}</main>
+    </div>
+  );
 }
