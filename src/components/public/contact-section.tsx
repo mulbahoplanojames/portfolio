@@ -1,8 +1,7 @@
-import React from "react";
-import { Input } from "../ui/input";
-import { Textarea } from "../ui/textarea";
-import { Card } from "../ui/card";
-import { Button } from "../ui/button";
+import { Input } from "@/src/components/ui/input";
+import { Textarea } from "@/src/components/ui/textarea";
+import { Card } from "@/src/components/ui/card";
+import { Button } from "@/src/components/ui/button";
 
 export default function ContactSection() {
   return (

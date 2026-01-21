@@ -1,21 +1,25 @@
 "use client";
-import Link from "next/link";
-import { Menu, Moon, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import React from "react";
 import { cn } from "@/src/lib/utils";
 import { ThemeToggle } from "../../ui/theme-toggle";
+import { Link } from "react-scroll";
 
 const menuItems = [
   { name: "About", href: "/about" },
   { name: "Skills", href: "/skills" },
   { name: "Experience", href: "/experience" },
-  { name: "Projects", href: "/projects" },
+  // { name: "Projects", href: "/projects" },
   { name: "Contact", href: "/contact" },
 ];
 
 export const Navbar = () => {
   const [menuState, setMenuState] = React.useState(false);
   const [isScrolled, setIsScrolled] = React.useState(false);
+
+  const handleSetActive = (to: string) => {
+    console.log(`Active section: ${to}`);
+  };
 
   React.useEffect(() => {
     const handleScroll = () => {
@@ -24,11 +28,12 @@ export const Navbar = () => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
   return (
-    <header className="sticky z-[9999] top-0">
+    <header className="sticky z-9999 top-0">
       <nav
         data-state={menuState && "active"}
-        className="sticky z-[9999] w-full px-2 top-0"
+        className="sticky z-9999 w-full px-2 top-0"
       >
         <div
           className={cn(
@@ -40,6 +45,11 @@ export const Navbar = () => {
           <div className="relative flex flex-wrap items-center justify-between gap-6 py-3 lg:gap-0 lg:py-4">
             <div className="flex w-full justify-between lg:w-auto">
               <Link
+                to="about"
+                spy={true}
+                smooth={true}
+                offset={-100}
+                duration={500}
                 href="/"
                 aria-label="home"
                 className="flex items-center space-x-2 font-bold"
@@ -62,8 +72,13 @@ export const Navbar = () => {
                 {menuItems.map((item, index) => (
                   <li key={index}>
                     <Link
-                      href={item.href}
-                      className="text-muted-foreground hover:text-accent-foreground block duration-150"
+                      to={item.href.replace("/", "")}
+                      spy={true}
+                      smooth={true}
+                      offset={-100}
+                      duration={500}
+                      onSetActive={handleSetActive}
+                      className="text-muted-foreground hover:text-accent-foreground block duration-150 cursor-pointer"
                     >
                       <span>{item.name}</span>
                     </Link>
@@ -78,8 +93,14 @@ export const Navbar = () => {
                   {menuItems.map((item, index) => (
                     <li key={index}>
                       <Link
-                        href={item.href}
-                        className="text-muted-foreground hover:text-accent-foreground block duration-150"
+                        to={item.href.replace("/", "")}
+                        spy={true}
+                        smooth={true}
+                        offset={-100}
+                        duration={500}
+                        onSetActive={handleSetActive}
+                        className="text-muted-foreground hover:text-accent-foreground block duration-150 cursor-pointer"
+                        onClick={() => setMenuState(false)}
                       >
                         <span>{item.name}</span>
                       </Link>
