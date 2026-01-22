@@ -15,7 +15,7 @@ export default function Experience() {
                 <div className="flex flex-wrap justify-between items-baseline mb-4">
                   <h3 className="text-xl font-bold">
                     {experience.title}{" "}
-                    <span className="text-primary font-semibold text-blue-500">
+                    <span className="font-semibold text-blue-700">
                       • {experience.company}
                     </span>
                   </h3>
