@@ -14,7 +14,7 @@ export default function ContactSection() {
           start the conversation!
         </p>
       </div>
-      <Card className="mx-auto bg-card-bg md:p-8 p-4 md:p-10 ">
+      <Card className="mx-auto bg-card-bg md:p-8 p-4">
         <form className="space-y-6">
           <div className="grid grid-cols-1 gap-6">
             <div className="space-y-2 flex flex-col">

@@ -3,16 +3,16 @@ import { Card } from "../ui/card";
 
 const languages = [
   {
-    name: "Python",
-    icon: "/python.png",
+    name: "TypeScript",
+    icon: "/typescript.png",
   },
   {
     name: "JavaScript",
     icon: "/javascript.png",
   },
   {
-    name: "TypeScript",
-    icon: "/typescript.png",
+    name: "Python",
+    icon: "/python.png",
   },
 ];
 
@@ -24,6 +24,10 @@ const toolsAndTechnologies = [
   {
     name: "Next Js",
     icon: "/nextjs.png",
+  },
+  {
+    name: "React Native",
+    icon: "/react.png",
   },
   {
     name: "Git",
