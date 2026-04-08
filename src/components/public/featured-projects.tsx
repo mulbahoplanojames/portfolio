@@ -4,59 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import { Button } from "../ui/button";
-
-const featuredProjects = [
-  {
-    id: 1,
-    name: "Cognify Blog",
-    image: "/projects/cognify.png",
-    description:
-      "A modern, responsive blog platform built with Next.js and TypeScript. Features a clean design, fast performance, and easy content management.",
-    tags: ["Next js", "TypeScript", "Tailwind CSS", "Mongo DB"],
-    demoUrl: "https://cognify-learn.vercel.app/",
-    repoUrl: "https://github.com/mulbahoplanojames/cognify",
-  },
-  {
-    id: 2,
-    name: "Steel Core",
-    image: "/projects/steal-core.png",
-    description:
-      "Developed a robust backend service for a logistics company. The service handles complex logistics operations and provides real-time tracking.",
-    tags: ["Next js", "TypeScript", "PostgreSQL"],
-    demoUrl: "https://steelcore-ec.vercel.app/",
-    repoUrl: "https://github.com/mulbahoplanojames/steel-core",
-  },
-  {
-    id: 3,
-    name: "AMOA Courses",
-    image: "/projects/amoa.png",
-    description:
-      "AMOA Courses is a robust, open-source platform designed for both educators and students to create, manage, and participate in online courses. Whether you are a teacher looking to share knowledge or a student eager to learn, AMOA Courses provides an intuitive, scalable environment for digital education. ",
-    tags: ["Next js", "TypeScript", "Mongo DB"],
-    demoUrl: "https://amoa-courses.vercel.app/",
-    repoUrl: "https://github.com/mulbahoplanojames/amoa-courses",
-  },
-  {
-    id: 4,
-    name: "Fessel FC",
-    image: "/projects/fessel.png",
-    description:
-      "Fessel FC is a modern football web application built for Fessel FC with Next.js and TypeScript, featuring robust authentication, MongoDB integration, and a rich UI built with Radix UI components. It's designed to provide a seamless user experience with real-time data handling and modern development practices. ",
-    tags: ["Next js", "TypeScript", "Mongo DB", "Radix UI"],
-    demoUrl: "https://fassel-fc.vercel.app",
-    repoUrl: "https://github.com/mulbahoplanojames/fessel-fc",
-  },
-  {
-    id: 5,
-    name: "MKExpress",
-    image: "/projects/mk-express.png",
-    description:
-      "MKExpress is an e-commerce platform built with Next.js and TypeScript, featuring robust authentication, MongoDB integration, and a rich UI built with Radix UI components. It's designed to provide a seamless user experience with real-time data handling and modern development practices. An e-commerce platform designed for small businesses, allowing them to sell their products online.",
-    tags: ["Next js", "TypeScript", "Mongo DB", "Radix UI"],
-    demoUrl: "https://mkexpress.vercel.app/",
-    repoUrl: "https://github.com/mulbahoplanojames/mkexpress",
-  },
-];
+import { featuredProjects } from "@/src/data/projects";
 
 export default function FeaturedProjects() {
   const [visibleProjects, setVisibleProjects] = useState(4);
@@ -104,6 +52,7 @@ export default function FeaturedProjects() {
                   <Link
                     className="inline-flex items-center justify-center rounded-md px-4 py-2 text-sm font-medium bg-zinc-800 text-white hover:bg-zinc-700 transition-colors"
                     href={project.demoUrl}
+                    target="_blank"
                   >
                     View Demo
                   </Link>
@@ -112,6 +61,7 @@ export default function FeaturedProjects() {
                   <Link
                     className="inline-flex items-center justify-center rounded-md px-4 py-2 text-sm font-medium bg-zinc-800 text-white hover:bg-zinc-700 transition-colors"
                     href={project.repoUrl}
+                    target="_blank"
                   >
                     View Code
                   </Link>
