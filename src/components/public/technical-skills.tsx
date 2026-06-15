@@ -42,6 +42,26 @@ const toolsAndTechnologies = [
     icon: "/zustand.svg",
   },
   {
+    name: "Node.js",
+    icon: "/nodejs.svg.png",
+  },
+  {
+    name: "Express.js",
+    icon: "/expressjs.svg",
+  },
+  {
+    name: "MongoDB",
+    icon: "/mongodb.svg",
+  },
+  {
+    name: "PostgreSQL",
+    icon: "/postgresql.svg",
+  },
+  {
+    name: "Convex",
+    icon: "/convex.svg",
+  },
+  {
     name: "Tailwind CSS",
     icon: "/tailwind.png",
   },
