@@ -20,14 +20,14 @@ export const featuredProjects = [
     repoUrl: "https://github.com/mulbahoplanojames/cognify",
   },
   {
-    id: 3,
-    name: "Steel Core",
-    image: "/projects/steal-core.png",
+    id: 2.5,
+    name: "Donar EV",
+    image: "/projects/donar-ev.png",
     description:
-      "Developed a robust backend service for a logistics company. The service handles complex logistics operations and provides real-time tracking.",
-    tags: ["Next js", "TypeScript", "PostgreSQL"],
-    demoUrl: "https://steelcore-ec.vercel.app/",
-    repoUrl: "https://github.com/mulbahoplanojames/steel-core",
+      "Donar EV is a platform for electric vehicle charging stations. It allows users to find and charge their electric vehicles at charging stations.",
+    tags: ["Next js", "TypeScript", "Tailwind CSS", "Convex"],
+    demoUrl: "https://donar-ev.vercel.app",
+    repoUrl: "#",
   },
   {
     id: 4,
@@ -49,6 +49,17 @@ export const featuredProjects = [
     demoUrl: "https://fassel-fc.vercel.app",
     repoUrl: "https://github.com/mulbahoplanojames/fessel-fc",
   },
+  {
+    id: 3,
+    name: "Steel Core",
+    image: "/projects/steal-core.png",
+    description:
+      "Developed a robust backend service for a logistics company. The service handles complex logistics operations and provides real-time tracking.",
+    tags: ["Next js", "TypeScript", "PostgreSQL"],
+    demoUrl: "https://steelcore-ec.vercel.app/",
+    repoUrl: "#",
+  },
+
   {
     id: 6,
     name: "MKExpress",
